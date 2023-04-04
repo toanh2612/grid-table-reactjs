@@ -1,13 +1,141 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+td {
+	/* overflow-y: hidden; */
+	/* overflow-y: scroll; */
+	/* word-wrap: break-word; */
+	font-size: 10px;
+	/* height: 10px; */
+	/* overflow-y: vi÷sible; */
+	/* display: inline-block; */
+	/* z-index: 2; */
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+tr {
+	text-align: left;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+	/* z-index: 2; */
+}
+th {
+	text-align: left;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+	/* z-index: 2; */
+}
+
+thead {
+	font-size: 10px;
+	/* z-index: 2; */
+}
+
+body {
+	width: fit-content;
+	background-color: #212529;
+	color: white;
+}
+
+.PagingButton {
+	font-size: 10px;
+}
+
+.PersonListNavBar {
+	position: sticky;
+	top: 0px;
+	background-color: #212529;
+	z-index: 5;
+}
+
+.PersonThTable {
+	position: sticky;
+	top: 25px;
+	/* z-index: 1; */
+}
+
+.PageInput {
+	border: 0;
+	border-radius: 1rem;
+	background-color: black;
+	width: 40px;
+	color: white;
+	font-size: 10px;
+	padding-left: 5px;
+	/* z-index: 0; */
+}
+
+.PageLabel {
+	color: white;
+	font-size: 10px;
+	z-index: 0;
+}
+
+.PerPageSelect {
+	border: 0;
+	border-radius: 1rem;
+	background-color: black;
+	width: 50px;
+	color: white;
+	font-size: 10px;
+	padding: 1px;
+	padding-left: 5px;
+	/* z-index: 0; */
+}
+
+.PerPageLabel {
+	color: white;
+	/* border: none;
+	width: 3rem;
+	border-radius: 1rem;
+	padding: 1px; */
+	font-size: 10px;
+	/* z-index: 0; */
+}
+
+.multiselect {
+	font-size: 10px;
+	display: inline-grid;
+	background-color: black;
+	color: white;
+	top: 7px;
+	/* z-index: 0;  */
+	width: 133px;
+	display: inline-block;
+	position: absolute;
+	height: auto;
+	min-height: 7px;
+	margin-left: 5px;
+}
+
+.selectBox select {
+	width: 100%;
+	font-weight: bold;
+	/* z-index: 0; */
+}
+
+.overSelect {
+	/* position: absolute; */
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	/* z-index: 0; */
+	/* position: fixed; */
+}
+
+.selectFields {
+	background-color: black;
+	color: white;
+	width: fit-content;
+	margin: 0;
+	/* z-index: 0; */
+}
+
+.PersonRowActived {
+	border-color: burlywood;
+	border: dotted;
+	font-weight: bold;
+}
+
+.PersonCellActived {
+	background-color: red;
 }
