@@ -1,4 +1,4 @@
-import React, { BaseSyntheticEvent, useEffect, useRef, useState } from "react";
+import React, { useEffect, useState } from "react";
 import { CONSTANT } from "../configs/constant";
 import { IPerson } from "../interfaces/IPerson.interface";
 import Table from "react-bootstrap/Table";
@@ -11,7 +11,6 @@ function PersonListDashboardTable(dashboardTableProps: IDashboardTableOptions) {
 	const hiddenColumns: IHiddenColumns = dashboardTableProps.hiddenColumns || CONSTANT.HIDDEN_COLUMNS_DEFAULT;
 	const [personList, setPersonList] = useState<IPerson[]>([]);
 	const [currentPersonIndex, setcurrentPersonIndex] = useState<number>(0);
-	const ref = useRef(null);
 
 	useEffect(() => {
 		let updatePersonList: IPerson[] = [];
