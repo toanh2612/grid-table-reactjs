@@ -49,10 +49,6 @@ function Dashboard() {
         setHiddenColumnsSelectBox(updateHiddenColumnsSelectBox);
     }
 
-    const onKey = (e: BaseSyntheticEvent) => {
-        console.log({ e });
-    }
-
     return (
         <div className="Dashboard">
             <div className="PersonListNavBar">
